@@ -18,7 +18,7 @@ service = build('docs', 'v1', credentials=credentials)
 document_id='1L8jwvwmf8p1lMAHzG8dcF2tU23KuyNC8M-twMxrQOjc'
 
 document = service.documents().get(documentId=document_id).execute()
-print(document)
+#print(document)
 
 def main():
     document_content = document['body']['content']
